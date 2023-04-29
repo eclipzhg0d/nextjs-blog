@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Footer from './Footer';
 import styles from './Layout.module.css';
 import Nav from './Nav';
 
@@ -7,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Next.js MongoDB App</title>
+        <title>NextBlog</title>
         <meta
           key="viewport"
           name="viewport"
@@ -15,12 +14,12 @@ const Layout = ({ children }) => {
         />
         <meta
           name="description"
-          content="nextjs-mongodb-app is a continously developed app built with Next.JS and MongoDB. This project goes further and attempts to integrate top features as seen in real-life apps."
+          content="a simple blog website using NextJS + MongoDB"
         />
         <meta property="og:title" content="Next.js + MongoDB App" />
         <meta
           property="og:description"
-          content="nextjs-mongodb-app is a continously developed app built with Next.JS and MongoDB. This project goes further and attempts to integrate top features as seen in real-life apps."
+          content="a simple blog website using NextJS + MongoDB"
         />
         <meta
           property="og:image"
@@ -29,7 +28,6 @@ const Layout = ({ children }) => {
       </Head>
       <Nav />
       <main className={styles.main}>{children}</main>
-      <Footer />
     </>
   );
 };

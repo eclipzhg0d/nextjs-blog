@@ -1,9 +1,13 @@
+.box {
+  background-color: red;
+  height: 300px;
+}
+
 .title {
-  font-size: 8rem;
+  font-size: 6rem;
   text-align: center;
   font-weight: 800;
   line-height: 1.1;
-  margin: 24px 0 64px;
 }
 
 .title > span {
@@ -43,7 +47,12 @@
 .subtitle {
   color: var(--secondary);
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
   margin: 8px 0 64px;
+}
+
+.subtitle a {
+  text-decoration: underline;
+  color: var(--secondary);
 }
